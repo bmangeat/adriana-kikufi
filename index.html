@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adriana Kikufi — Designer UI / Graphiste</title>
+  <meta name="description" content="Portfolio d'Adriana Kikufi, designer graphique & webdesigner UI/UX. Illustration, branding, typographie et UI/UX." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Adriana Kikufi — Designer UI / Graphiste" />
+  <meta property="og:description" content="Portfolio 2026 — Illustration, branding, typographie & UI/UX." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/hero-cherry.jpg" />
+
+  <link rel="icon" href="assets/img/cozytiger-logo.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- décor : étoiles flottantes globales -->
+  <div class="sparkle-field" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand">
+        <span class="nav__brand-mark">✦</span>
+        Adriana&nbsp;Kikufi
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">À propos</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-blob"></div>
+    <div class="hero__inner">
+      <div class="hero__text reveal">
+        <p class="hero__kicker">Portfolio <span>2026</span></p>
+        <h1 class="hero__title">
+          <span class="hero__title-top">Adriana</span>
+          <span class="hero__title-bottom">Kikufi</span>
+        </h1>
+        <p class="hero__role">Designer graphique <span class="dot">•</span> Webdesigner UI / UX</p>
+        <p class="hero__lead">
+          Étudiante en Bachelor Design Graphique à l'ESDAC Paris.
+          Curieuse, engagée et passionnée par l'image et l'illustration,
+          j'adore explorer de nouveaux univers visuels.
+        </p>
+        <div class="hero__actions">
+          <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn--ghost">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="hero__art reveal">
+        <div class="hero__art-frame">
+          <img src="assets/img/hero-cherry.jpg" alt="Illustration sous les cerisiers en fleurs" loading="eager" />
+        </div>
+        <span class="float-star s1">✦</span>
+        <span class="float-star s2">✧</span>
+        <span class="float-star s3">✦</span>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Défiler">
+      <span class="hero__scroll-mouse"></span>
+      <span class="hero__scroll-txt">Défiler</span>
+    </a>
+  </section>
+
+  <!-- ============ À PROPOS ============ -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+      <div class="about__photo reveal">
+        <div class="about__photo-frame">
+          <img src="assets/img/adriana-portrait.jpg" alt="Portrait d'Adriana Kikufi" loading="lazy" />
+        </div>
+        <span class="float-star s1">✦</span>
+      </div>
+
+      <div class="about__content reveal">
+        <span class="ribbon">À propos</span>
+        <h2 class="section-title">Hey&nbsp;! Moi c'est Adriana</h2>
+        <p>
+          Actuellement en Bachelor Design Graphique à l'ESDAC Paris, après un passage
+          par l'animation 2D/3D, j'ai décidé de me recentrer à 100&nbsp;% sur le graphisme.
+        </p>
+        <p>
+          Un brin curieuse, engagée et carrément passionnée par l'image et l'illustration,
+          j'adore explorer de nouveaux univers visuels. On dit de moi que j'ai un super
+          esprit d'équipe et que je m'adapte à toutes les situations.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Curieuse</span>
+          <span class="tag">Passionnée d'image</span>
+          <span class="tag">Esprit d'équipe</span>
+          <span class="tag">Adaptable</span>
+          <span class="tag">Engagée</span>
+        </div>
+
+        <div class="about__skills">
+          <h3 class="about__skills-title">Mes outils</h3>
+          <!-- À personnaliser : ajoute / retire selon tes logiciels -->
+          <ul class="skills">
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>InDesign</li>
+            <li>Figma</li>
+            <li>Procreate</li>
+            <li>After Effects</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARCOURS ============ -->
+  <section class="parcours" id="parcours">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="ribbon">Parcours</span>
+        <h2 class="section-title">Expériences &amp; formations</h2>
+      </div>
+
+      <div class="parcours__cols">
+        <div class="timeline reveal">
+          <h3 class="timeline__head"><span class="timeline__dot-head">●</span> Expériences</h3>
+
+          <div class="tl-item">
+            <span class="tl-date">Oct. 2024 — Présent</span>
+            <h4>Landing Factory <em>· Alternance</em></h4>
+            <p>Webdesign UI/UX, création de visuels et d'illustrations pour le Jeu Quizz de Génie, et visuels pour Pixyzer.</p>
+          </div>
+
+          <div class="tl-item">
+            <span class="tl-date">Juil. 2022 — Fév. 2024</span>
+            <h4>Carrefour Market <em>· Hôtesse de caisse</em></h4>
+            <p>Sens du service et travail en équipe au contact de la clientèle.</p>
+          </div>
+
+          <div class="tl-item">
+            <span class="tl-date">Déc. 2021 — Présent</span>
+            <h4>Association JM Production <em>· Membre active</em></h4>
+            <p>Conception d'illustrations de personnages et de concept art.</p>
+          </div>
+        </div>
+
+        <div class="timeline reveal">
+          <h3 class="timeline__head"><span class="timeline__dot-head">●</span> Formations</h3>
+
+          <div class="tl-item">
+            <span class="tl-date">2024 — 2025</span>
+            <h4>ESDAC Paris</h4>
+            <p>Bachelor Design Graphique (3<sup>e</sup> année).</p>
+          </div>
+
+          <div class="tl-item">
+            <span class="tl-date">2019 — 2021</span>
+            <h4>LISAA Paris</h4>
+            <p>Bachelor Cinéma d'Animation 2D/3D (1<sup>re</sup> &amp; 2<sup>e</sup> année).</p>
+          </div>
+
+          <div class="tl-item">
+            <span class="tl-date">2017 — 2019</span>
+            <h4>Les Gobelins / Méliès Paris</h4>
+            <p>Cinéma d'animation 2D/3D (année préparatoire &amp; 1<sup>re</sup> année).</p>
+          </div>
+
+          <div class="tl-item">
+            <span class="tl-date">2015 — 2016</span>
+            <h4>ISART Digital Paris</h4>
+            <p>Cinéma d'animation 2D/3D (année préparatoire).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJETS ============ -->
+  <section class="projects" id="projets">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="ribbon">Projets</span>
+        <h2 class="section-title">Une sélection de mes travaux</h2>
+        <p class="section-sub">Du branding à l'illustration en passant par l'UI/UX — clique sur un projet pour le découvrir.</p>
+      </div>
+
+      <div class="filters reveal" id="filters">
+        <button class="filter is-active" data-filter="all">Tout</button>
+        <button class="filter" data-filter="uiux">UI / UX</button>
+        <button class="filter" data-filter="branding">Branding</button>
+        <button class="filter" data-filter="illustration">Illustration</button>
+        <button class="filter" data-filter="typo">Typographie</button>
+        <button class="filter" data-filter="infographie">Infographie</button>
+      </div>
+
+      <div class="grid" id="projectGrid"><!-- injecté par JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact__blob"></div>
+    <div class="container contact__inner reveal">
+      <span class="ribbon ribbon--light">Contact</span>
+      <h2 class="section-title section-title--light">Travaillons ensemble&nbsp;!</h2>
+      <p class="contact__lead">
+        Une idée, un projet, un stage ou juste envie d'échanger ?
+        Ma boîte mail est toujours ouverte.
+      </p>
+
+      <div class="contact__cards">
+        <a class="ccard" href="mailto:adriana.kikufi@gmail.com">
+          <span class="ccard__ico">✉</span>
+          <span class="ccard__label">Email</span>
+          <span class="ccard__val">adriana.kikufi@gmail.com</span>
+        </a>
+        <a class="ccard" href="tel:+33612691132">
+          <span class="ccard__ico">✆</span>
+          <span class="ccard__label">Téléphone</span>
+          <span class="ccard__val">06 12 69 11 32</span>
+        </a>
+      </div>
+
+      <!-- Réseaux : remplace les # par tes liens -->
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn" title="LinkedIn (à compléter)">LinkedIn</a>
+        <a href="#" aria-label="Instagram" title="Instagram (à compléter)">Instagram</a>
+        <a href="#" aria-label="Behance" title="Behance (à compléter)">Behance</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>✦ Adriana Kikufi — Portfolio 2026</span>
+      <a href="#hero" class="footer__top">Haut de page ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Fermer">✕</button>
+    <button class="lightbox__nav lightbox__prev" id="lbPrev" aria-label="Précédent">‹</button>
+    <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="Suivant">›</button>
+    <div class="lightbox__panel" id="lbPanel">
+      <div class="lightbox__stage">
+        <img id="lbImg" src="" alt="" />
+      </div>
+      <div class="lightbox__info">
+        <span class="lightbox__cat" id="lbCat"></span>
+        <h3 id="lbTitle"></h3>
+        <p id="lbDesc"></p>
+        <div class="lightbox__thumbs" id="lbThumbs"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
