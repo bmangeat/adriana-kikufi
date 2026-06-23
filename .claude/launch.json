@@ -2,9 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "portfolio",
+      "name": "portfolio-adriana",
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "4321"],
+      "cwd": "/Users/bricemangeat/Desktop/portfolio-adriana",
       "port": 4321
     }
   ]

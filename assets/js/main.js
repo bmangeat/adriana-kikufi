@@ -164,18 +164,28 @@ const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 40);
 onScroll();
 window.addEventListener("scroll", onScroll, { passive: true });
 
-burger.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("is-open");
+let _menuScrollY = 0;
+function setMenu(open) {
+  navLinks.classList.toggle("is-open", open);
   burger.classList.toggle("is-open", open);
   burger.setAttribute("aria-expanded", open);
+  if (open) {
+    _menuScrollY = window.scrollY;
+    document.body.style.top = `-${_menuScrollY}px`;
+    document.body.classList.add("menu-open");
+  } else {
+    document.body.classList.remove("menu-open");
+    document.body.style.top = "";
+    window.scrollTo({ top: _menuScrollY, behavior: "instant" });
+  }
+}
+
+burger.addEventListener("click", () => setMenu(!navLinks.classList.contains("is-open")));
+navLinks.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+// ferme le menu avec Échap
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && navLinks.classList.contains("is-open")) setMenu(false);
 });
-navLinks.querySelectorAll("a").forEach((a) =>
-  a.addEventListener("click", () => {
-    navLinks.classList.remove("is-open");
-    burger.classList.remove("is-open");
-    burger.setAttribute("aria-expanded", "false");
-  })
-);
 
 /* =================================================================
    5. Lightbox / galerie projet
