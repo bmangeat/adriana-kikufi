@@ -98,13 +98,20 @@ body::before {
    ================================================================= */
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  transition: background .35s var(--ease), box-shadow .35s var(--ease), padding .35s var(--ease);
+  transition: box-shadow .35s var(--ease), padding .35s var(--ease);
   padding: 18px 0;
 }
-.nav.is-scrolled {
+.nav::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: transparent;
+  transition: background .35s var(--ease), backdrop-filter .35s var(--ease), box-shadow .35s var(--ease);
+}
+.nav.is-scrolled::before {
   background: rgba(246,239,222,.86);
   backdrop-filter: blur(12px);
   box-shadow: 0 6px 24px -16px rgba(27,42,74,.5);
+}
+.nav.is-scrolled {
   padding: 10px 0;
 }
 .nav__inner {
@@ -261,7 +268,7 @@ body::before {
 /* =================================================================
    À PROPOS
    ================================================================= */
-.about { padding: 90px 0; }
+.about { padding: 80px 0; }
 .about__grid {
   display: grid; grid-template-columns: .8fr 1.2fr; gap: 3.4rem; align-items: center;
 }
@@ -276,6 +283,7 @@ body::before {
 .about__photo .s1 { bottom: -14px; right: 8%; font-size: 2.2rem; }
 
 .about__content p { color: var(--ink-soft); margin-bottom: 1rem; max-width: 38rem; }
+.about__content h2 { margin-bottom: 16px }
 .tags { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.4rem 0 2rem; }
 .tag {
   font-weight: 700; font-size: .9rem;
@@ -329,7 +337,7 @@ body::before {
 /* =================================================================
    PROJETS
    ================================================================= */
-.projects { padding: 90px 0; }
+.projects { padding: 80px 0; }
 .filters { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center; margin-bottom: 2.6rem; }
 .filter {
   font-weight: 700; font-size: .95rem; color: var(--ink);
@@ -514,7 +522,7 @@ body::before {
   .hero__scroll { display: none; }
 
   .about__grid { grid-template-columns: 1fr; gap: 2.4rem; }
-  .about__photo-frame { margin-inline: auto; }
+  .about__photo-frame { margin-inline: auto; max-width: 240px; }
   .parcours__cols { grid-template-columns: 1fr; gap: 2.4rem; }
 }
 
